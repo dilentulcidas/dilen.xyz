@@ -16,12 +16,35 @@
         .fa-cog {
         color: white;
         }
-        #photo {
-            vertical-align: middle;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        div.circle-avatar{
+            /* make it responsive */
+            max-width: 40%;
+            width:40%;
+            height:auto;
+            display:block;
+            /* div height to be the same as width*/
+            padding-top:40%;
+
+            /* make it a cirkle */
+            border-radius:50%;
+
+            /* Centering on image`s center*/
+            background-position-y: center;
+            background-position-x: center;
+            background-repeat: no-repeat;
+
+            /* it makes the clue thing, takes smaller dimention to fill div */
+            background-size: cover;
+
+            /* it is optional, for making this div centered in parent*/
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
             margin-bottom: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -56,9 +79,7 @@
     <!-- End header -->
     <div id="lead">
         <div id="lead-content">
-            <div style="height:250px; width:250px;overflow:hidden;border-radius: 100%" id="photo">
-                <img class="img-responsive" src="https://www.communitylandtrust.ca/wp-content/uploads/2015/10/placeholder.png"/>
-            </div>
+            <div class="circle-avatar" style="background-image:url(https://www.communitylandtrust.ca/wp-content/uploads/2015/10/placeholder.png)"></div>
             <h1>Dilen Tulcidas</h1>
             <h2>Software Engineer</h2>
             <a href="#" class="btn-rounded-white">Download Resume</a>
